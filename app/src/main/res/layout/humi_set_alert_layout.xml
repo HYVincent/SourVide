@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:background="@color/color_my_half_transparent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp" >
+
+    <TextView
+        android:id="@+id/verticalText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dip"
+        android:text="@string/text_kettle_zero"
+        android:textColor="@color/color_my_white"
+        android:textStyle="bold" />
+
+    <com.vincent.sourvide.view.VerticalSeekBar
+        android:id="@+id/verticalSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dip"
+        android:maxHeight="6dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:progressDrawable="@drawable/seek_img"
+        android:thumb="@drawable/thumb_small" />
+
+</LinearLayout>

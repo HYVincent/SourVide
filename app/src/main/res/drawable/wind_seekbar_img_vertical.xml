@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/wind_seekbar_normal_vertical" />
+    <item android:id="@android:attr/theme" android:drawable="@drawable/wind_seekbar_normal_vertical" />
+    <item android:id="@android:id/progress" android:drawable="@drawable/wind_seekbar_pressed_vertical" />
+</layer-list>

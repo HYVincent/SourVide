@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:id="@+id/deviceconfigure_mainbg"  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:gravity="center"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView 
+        android:layout_gravity="center_horizontal" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/delay_add_titleclock_margintop" 
+        android:layout_marginBottom="@dimen/delay_add_titleclock_marginbuttom" 
+        android:src="@drawable/delaytask_clock_gray" 
+        android:contentDescription="@string/contentDescription" />
+    <LinearLayout 
+        android:gravity="center_horizontal" 
+        android:orientation="vertical" 
+        android:background="@drawable/timer_list_bg" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/dayll" android:background="@color/none_color" android:layout_width="@dimen/delay_add_layoutwidth" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_add_layout_margintop">
+            <ImageButton android:id="@+id/day_leftarrow" android:background="@drawable/delaytask_left_arrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/delay_add_textsize" android:textColor="@color/white" android:id="@+id/daynum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/delay_day" android:layout_alignBottom="@+id/daynum" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageButton android:id="@+id/day_rightarrow" android:background="@drawable/delaytask_right_arrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_list_line_margintop" android:src="@drawable/delaytask_list_split_gray_horizontal" android:contentDescription="@string/contentDescription" />
+        <RelativeLayout android:id="@+id/hourll" android:background="@color/none_color" android:layout_width="@dimen/delay_add_layoutwidth" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_add_layout_margintop">
+            <ImageButton android:id="@+id/hour_leftarrow" android:background="@drawable/delaytask_left_arrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/delay_add_textsize" android:textColor="@color/white" android:id="@+id/hournum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/delay_hour" android:layout_alignBottom="@+id/hournum" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageButton android:id="@+id/hour_rightarrow" android:background="@drawable/delaytask_right_arrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_list_line_margintop" android:src="@drawable/delaytask_list_split_gray_horizontal" android:contentDescription="@string/contentDescription" />
+        <RelativeLayout android:id="@+id/minll" android:background="@color/none_color" android:layout_width="@dimen/delay_add_layoutwidth" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_add_layout_margintop">
+            <ImageButton android:id="@+id/min_leftarrow" android:background="@drawable/delaytask_left_arrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/delay_add_textsize" android:textColor="@color/white" android:id="@+id/minnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/delay_min" android:layout_alignBottom="@+id/minnum" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageButton android:id="@+id/min_rightarrow" android:background="@drawable/delaytask_right_arrow_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_list_line_margintop" android:src="@drawable/delaytask_list_bottom_img" android:contentDescription="@string/contentDescription" />
+        <TextView android:id="@+id/delaytime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delay_list_line_margintop" />
+    </LinearLayout>
+</LinearLayout>

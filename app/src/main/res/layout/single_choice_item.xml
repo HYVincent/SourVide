@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView 
+    android:textSize="18.0sp" 
+    android:textColor="@color/color_black" 
+    android:gravity="center_vertical" 
+    android:paddingLeft="5.0dip" 
+    android:paddingTop="10.0dip" 
+    android:paddingRight="5.0dip" 
+    android:paddingBottom="10.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/check_text_title"
+    android:checkMark="@drawable/selector_single_choice"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

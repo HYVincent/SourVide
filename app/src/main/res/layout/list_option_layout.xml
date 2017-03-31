@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@color/color_my_transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<LinearLayout 
+    android:gravity="bottom" 
+    android:orientation="vertical" 
+    android:layout_width="170dip" 
+    android:layout_marginRight="10dip"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dip"
+    android:paddingBottom="16dip">
+  
+    <TextView 
+    android:textSize="18.0sp" 
+    android:background="@drawable/list_item_bg_gray"
+    android:textColor="@color/color_main_bg" 
+    android:gravity="left|center_vertical" 
+    android:text="@string/option_text_edit"
+    android:textStyle="bold"
+    android:paddingLeft="7.0dip" 
+    android:paddingTop="10.0dip" 
+    android:paddingBottom="10.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/list_option_edit">
+    </TextView>
+    
+<LinearLayout
+  android:background="@color/color_gray"
+  android:layout_width="fill_parent"
+  android:layout_height="1px"/>
+  
+<TextView 
+    android:textSize="18.0sp" 
+    android:background="@drawable/list_item_bg_gray"
+    android:textColor="@color/color_main_bg" 
+    android:gravity="left|center_vertical" 
+    android:text="@string/option_text_del"
+    android:textStyle="bold"
+    android:paddingLeft="7.0dip" 
+    android:paddingTop="10.0dip" 
+    android:paddingBottom="10.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/list_option_del">
+</TextView>
+<LinearLayout
+	android:background="@color/color_gray"
+  android:layout_width="fill_parent"
+  android:layout_height="1px"/>
+
+<TextView 
+    android:textSize="18.0sp" 
+    android:visibility="gone"
+    android:background="@drawable/list_item_bg_gray"
+    android:textColor="@color/color_main_bg" 
+    android:gravity="left|center_vertical" 
+    android:text="@string/option_text_clear_all"
+    android:paddingLeft="7.0dip" 
+    android:paddingTop="10.0dip" 
+    android:textStyle="bold"
+    android:paddingBottom="10.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/list_option_clear_all">
+</TextView>
+
+	
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"	
+    android:background="@color/color_my_transparent"	
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout 
+	     android:layout_height="wrap_content"
+		 android:layout_width="fill_parent">
+		 
+		     <ImageView 
+			    android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:src="@drawable/picker_title_bg"
+				android:scaleType="centerCrop"/>
+		     
+		     <TextView 
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:textColor="#FF101010"
+				android:layout_marginLeft="6dp"
+				android:textSize="20sp"
+				android:text="@string/timer_title"/>	
+	</FrameLayout>
+	
+	<FrameLayout 
+	     android:layout_height="wrap_content"
+		 android:layout_width="fill_parent">
+		     
+		<ImageView 
+		    android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:src="@drawable/timer_pick_main_bg"
+			android:scaleType="centerCrop"/>
+		
+		 <LinearLayout 
+		     android:layout_height="fill_parent"
+			 android:layout_width="wrap_content"
+			 android:layout_marginTop="6dp" >	
+			
+		     <LinearLayout
+				android:background="@drawable/picker_bg"
+				android:layout_height="@dimen/picker_bg_height"
+				android:layout_width="@dimen/picker_bg_width"
+				android:orientation="vertical">
+				
+			    <TextView 
+			     android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:gravity="left"
+				 android:paddingLeft="10dp"
+				 android:textColor="@color/color_black"
+				 android:textSize="16sp"
+				 android:text="@string/label_start"/>
+				    
+			    <LinearLayout 
+				    android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:gravity="center_vertical"
+					android:paddingLeft="14dp"
+					android:orientation="horizontal"
+					>
+					<kankan.wheel.widget.WheelView 
+				     android:id="@+id/hour"
+				     android:background="@color/color_my_transparent"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"/>
+				 
+					<kankan.wheel.widget.WheelView 
+					    android:id="@+id/mins"
+					    android:layout_marginLeft="20dp"
+					    android:background="@color/color_my_transparent"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:background="@drawable/picker_bg"
+				android:layout_height="@dimen/picker_bg_height"
+				android:layout_width="@dimen/picker_bg_width"
+				android:orientation="vertical">
+				
+			    <TextView 
+			     android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:gravity="right"
+				 android:paddingRight="10dp"
+				 android:textColor="@color/color_black"
+				 android:textSize="16sp"
+				 android:text="@string/label_end"/>
+			    
+				<LinearLayout 
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:layout_height="wrap_content"
+				 	android:layout_width="fill_parent"
+					android:paddingLeft="14dp"
+					>
+					    <kankan.wheel.widget.WheelView 
+					    android:id="@+id/end_hour"
+					    android:background="@color/color_my_transparent"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"/>
+					
+						<kankan.wheel.widget.WheelView 
+					    android:id="@+id/end_mins"
+					    android:layout_marginLeft="20dp"
+					    android:background="@color/color_my_transparent"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>	
+		
+		 <LinearLayout 
+		     android:layout_height="wrap_content"
+			 android:layout_width="fill_parent"
+			 android:layout_gravity="bottom"
+			 android:gravity="center"
+			 android:layout_marginBottom="8dp">
+		  
+		     <Button 
+		     android:layout_height="@dimen/confrim_btn_height"
+			 android:layout_width="@dimen/confrim_btn_width"
+			 android:id="@+id/cancel_btn"
+			 android:background="@drawable/button_bg"
+			 android:text="@string/cancel"
+			 android:textColor="@color/color_my_white"/>
+		 
+			 <Button 
+			     android:layout_height="@dimen/confrim_btn_height"
+				 android:layout_width="@dimen/confrim_btn_width"
+				 android:layout_marginLeft="60dp"
+				 android:text="@string/yes"
+				 android:textColor="@color/color_my_white"
+				 android:background="@drawable/button_bg"
+				 android:id="@+id/confirm_btn"/>
+		 
+		 </LinearLayout>
+		 
+		 
+	</FrameLayout>
+	
+	
+</LinearLayout>

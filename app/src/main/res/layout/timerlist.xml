@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:id="@+id/timerset_mainbg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView 
+        android:id="@+id/top" 
+        android:visibility="gone"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" />
+    <ImageView 
+        android:id="@+id/timer_title_clock" 
+        android:visibility="gone"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="@dimen/timer_title_clock" 
+        android:layout_marginBottom="@dimen/timer_margin_10" 
+        android:src="@drawable/timer_title_clock" 
+        android:layout_below="@id/top" 
+        android:layout_centerHorizontal="true" 
+        android:contentDescription="@string/timer_img" />
+    <TextView 
+        android:textSize="@dimen/timer_text_text_size" 
+        android:textColor="@color/timer_notimer" 
+        android:gravity="center" 
+        android:id="@+id/timer_notimer" 
+        android:visibility="gone" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/timer_notime" 
+        android:drawableTop="@drawable/timer_nonum_clock" 
+        android:layout_centerInParent="true" />
+    
+
+    <ListView 
+        android:id="@+id/timerlistitem" 
+        android:background="@color/white"
+        android:fadingEdge="none" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:cacheColorHint="@color/color_my_transparent" 
+		android:divider="@color/color_gray"
+		android:listSelector="@color/color_my_transparent"
+		android:dividerHeight="1px"
+        android:scrollingCache="false" 
+        android:layout_below="@id/timer_title_clock" />
+    
+</RelativeLayout>

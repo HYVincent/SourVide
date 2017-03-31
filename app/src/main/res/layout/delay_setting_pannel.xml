@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:id="@+id/deviceconfigure_mainbg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <ImageView 
+        android:layout_gravity="center_horizontal" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="@dimen/delay_add_titleclock_margintop" 
+        android:layout_marginBottom="@dimen/delay_add_titleclock_marginbuttom" 
+        android:src="@drawable/delay_off_selector" 
+        android:id="@+id/delay_task_btn"
+        android:contentDescription="@string/contentDescription" />
+    
+    <ImageButton android:id="@+id/scene_control_menu" 
+        android:background="@null" 
+        android:visibility="gone" 
+        android:layout_width="@dimen/scene_control_menu_size" 
+        android:layout_height="@dimen/scene_control_menu_width" 
+        android:src="@drawable/scene_control_menu_more" 
+        android:contentDescription="@string/timer_img" />
+    <RelativeLayout 
+        android:layout_gravity="center_horizontal" 
+        android:orientation="vertical" 
+        android:background="@drawable/timer_list_bg" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            android:textSize="18.0sp" 
+            android:textColor="@color/black" 
+            android:id="@+id/lefttimetxt" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="@dimen/delay_set_margintop" 
+            android:text="@string/delay_lasttime" 
+            android:layout_centerHorizontal="true" />
+        
+        <LinearLayout 
+            android:background="@drawable/delay_panel_bg_selector" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+            android:weightSum="3.0"
+            android:id="@+id/delay_info_bg"
+            android:layout_marginTop="@dimen/delay_add_layout_margintop" 
+            android:layout_below="@+id/lefttimetxt" 
+            android:layout_centerHorizontal="true">
+            
+            <FrameLayout 
+                android:layout_width="0dip" 
+            	android:layout_height="fill_parent" 
+            	android:layout_weight="1.0">
+	            <TextView 
+	                android:textSize="@dimen/delay_add_textsize" 
+	                android:textColor="@color/white" 
+	                android:id="@+id/daynum" 
+	                android:layout_gravity="top|center_horizontal"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:text="@string/delay_default_time"  />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@color/black" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_gravity="bottom|center_horizontal"
+	                android:text="@string/delay_day"  />
+	            <ImageView 
+	                android:id="@+id/day_img" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content"
+	                 android:src="@drawable/delaytask_split_vertical_gray"  
+	                 android:layout_gravity="right|center_vertical"
+	                 android:contentDescription="@string/contentDescription" />
+            </FrameLayout> 
+            
+            <FrameLayout 
+                android:layout_width="0dip" 
+            	android:layout_height="fill_parent" 
+            	android:layout_weight="1.0">
+	            <TextView 
+	                android:textSize="@dimen/delay_add_textsize" 
+	                android:textColor="@color/white" 
+	                android:layout_gravity="top|center_horizontal"
+	                android:id="@+id/hournum" 
+	                android:text="@string/delay_default_time"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@color/black" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_gravity="bottom|center_horizontal"
+	                android:text="@string/delay_hour"  />
+	            <ImageView 
+	                android:id="@+id/hour_img"
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_gravity="right|center_vertical"
+	                android:src="@drawable/delaytask_split_vertical_gray" 
+	                android:contentDescription="@string/contentDescription" />
+            </FrameLayout> 
+            
+            <FrameLayout 
+                android:layout_width="0dip" 
+            	android:layout_height="fill_parent" 
+            	android:layout_weight="1.0">
+	            <TextView 
+	                android:textSize="@dimen/delay_add_textsize" 
+	                android:textColor="@color/white" 
+	                android:id="@+id/minnum" 
+	                android:layout_width="wrap_content" 
+	                android:text="@string/delay_default_time"
+	                android:layout_height="wrap_content" 
+	                android:layout_gravity="top|center_horizontal" />
+	            <TextView 
+	                android:textSize="12.0sp" 
+	                android:textColor="@color/black" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_gravity="bottom|center_horizontal"
+	                android:text="@string/delay_min"  />
+	            </FrameLayout> 
+	            
+        </LinearLayout>
+        
+    </RelativeLayout>
+</LinearLayout>

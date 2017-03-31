@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--  
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView 
+        android:id="@id/pull_refresh_scrollview" 
+        android:fadingEdge="none" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:fillViewport="true" 
+        android:layout_weight="1.0">
+  -->      
+  <LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/color_list_bg"
+    android:layout_weight="1.0">
+ 
+      <TextView 
+            android:textSize="18.0sp" 
+            android:textColor="@color/color_gray" 
+            android:id="@+id/no_device_view"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:text="@string/no_device"  />
+      
+	<ListView
+            android:id="@+id/device_list_view" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+    		android:drawSelectorOnTop="false" 
+		    android:cacheColorHint="@color/color_my_transparent" 
+			android:divider="@color/color_gray"
+		    android:listSelector="@color/color_my_transparent"
+		    android:dividerHeight="1px"
+            android:footerDividersEnabled="true"/>
+	
+  </LinearLayout>      
+ <!--       
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+ -->   
+    <LinearLayout 
+        android:gravity="center" 
+        android:id="@+id/add_device_layout" 
+        android:background="@color/color_my_white" 
+        android:layout_width="fill_parent" 
+        android:layout_height="45.0dip" 
+        android:layout_weight="0.0">
+        
+        <TextView 
+            android:textSize="21.0sp" 
+            android:textColor="@color/color_gray" 
+            android:gravity="center_vertical" 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent" 
+            android:text="@string/search_device" 
+            android:drawableRight="@drawable/enter" 
+            android:drawablePadding="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

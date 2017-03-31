@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+android:gravity="center" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent"
+android:background="@drawable/gb_w"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+    android:gravity="center" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    
+        
+        <LinearLayout 
+        android:gravity="center_vertical" 
+        android:orientation="vertical" 
+        android:background="@null" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:layout_weight="970.0">
+            <View 
+            android:layout_weight="33.0" 
+            style="@style/view_vertical" />
+            <LinearLayout 
+            android:gravity="center" 
+            android:orientation="horizontal" 
+            android:layout_weight="887.0" 
+            style="@style/view_vertical">
+                <View 
+                android:layout_weight="53.0" 
+                style="@style/view_horizontal" />
+                
+                <ScrollView 
+                android:layout_weight="529.0" 
+                android:overScrollMode="never"
+                style="@style/view_horizontal">
+                    <WebView 
+                    android:id="@+id/faq_wv" 
+                    android:background="@drawable/tran_bg" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content"  />
+                </ScrollView>
+                
+                <View 
+                android:layout_weight="58.0" 
+                style="@style/view_horizontal" />
+            </LinearLayout>
+            <View 
+            android:layout_weight="83.0" 
+            style="@style/view_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="horizontal" 
+    android:background="@color/color_my_white"  
+    android:layout_width="fill_parent" 
+    android:layout_height="600dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <SeekBar 
+            android:id="@+id/wind_bar" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"  
+            android:minWidth="200dip"
+            android:minHeight="50dip"
+            android:progressDrawable="@drawable/wind_seekbar_img" 
+            android:thumb="@drawable/wind_seekbar_thumb" />
+
+</LinearLayout>

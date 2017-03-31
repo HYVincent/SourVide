@@ -3,4 +3,54 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+	
+	
+	  <color name="color_black">#ff333333</color>
+    <color name="color_green">#ff13b35c</color>
+    <color name="color_gray">#ff999999</color>
+    <color name="color_air_bad">#ffff7278</color>
+    <color name="color_air_normal">#ffae47ff</color>
+    <color name="color_air_good">#ff4eb7ff</color>
+    <color name="color_air_best">#ff5aad0c</color>
+    <color name="color_standby">#ff3b4a59</color>
+    <color name="color_filter_text">#ff5aad0c</color>
+    <color name="color_filter_warn_text">#ffff555c</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="color_my_white">#FFFFFF</color>
+    <!-- <color name="my_blue">#ff015c9c</color> -->
+    <color name="color_my_blue">#009ada</color>
+    <color name="color_my_half_transparent">#20000000</color>
+    <color name="color_main_bg">#ff4dabc5</color>
+    <color name="color_main_high">#ff2893cb</color>
+    <color name="color_logo_text">#ff00825a</color>
+    <color name="color_my_transparent">#00000000</color>
+    <color name="color_goodnight_text_high">#ff07a5d4</color>
+    <color name="color_good_text">#ff46acf6</color>
+    <color name="color_list_bg">#ffeeeeee</color>
+    <color name="color_list_item_pressed">#402893cb</color>
+    <color name="color_red">#fff95d5d</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#ff807f7f</color>
+    <color name="blue">#ff0099ff</color>
+    <color name="red">#ffe50f2f</color>
+    <color name="lightBlue">#ff3e97c4</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff333333</color>
+    <color name="timer_notimer">#ff656e80</color>
+    <color name="timerlist_light">#ffffffff</color>
+    <color name="timerlist_dark">#ff8d99b0</color>
+    <color name="timerlist_time">#ff455067</color>
+    <color name="scene_light_gray">#ffcccccc</color>
+    <color name="scene_dark_gray">#ff666666</color>
+    <color name="none_color">#00000000</color>
+    <color name="temprature_color">#ff059ee4</color>
+    <color name="select_color">#ff00716e</color>
+    
+    <color name="color_blue">#1C86EE</color>
+    <color name="color_white">#ffffff</color>
+	
 </resources>

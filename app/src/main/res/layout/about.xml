@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gb_w"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/view_vertical"
+            android:layout_weight="910.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                style="@style/view_horizontal"
+                android:layout_weight="31.0" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="578.0"
+                android:background="@drawable/about_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    style="@style/view_horizontal"
+                    android:layout_weight="368.0"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <View
+                        style="@style/view_vertical"
+                        android:layout_weight="40.0" />
+
+                    <LinearLayout
+                        style="@style/view_vertical"
+                        android:layout_weight="74.0"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <View
+                            style="@style/view_horizontal"
+                            android:layout_weight="223.0" />
+
+                        <ImageView
+                            style="@style/view_horizontal"
+                            android:layout_weight="400.0"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/logo2" />
+
+                        <View
+                            style="@style/view_horizontal"
+                            android:layout_weight="223.0" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/view_vertical"
+                        android:layout_weight="20.0" />
+
+                    <TextView
+                        style="@style/view_vertical"
+                        android:layout_weight="57.0"
+                        android:gravity="center"
+                        android:shadowColor="#ff000000"
+                        android:shadowDx="0.0"
+                        android:shadowDy="-1.0"
+                        android:shadowRadius="1.0"
+                        android:singleLine="true"
+                        android:text="@string/goodnight_guard"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/eighteenSp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/version_tv"
+                        style="@style/view_vertical"
+                        android:layout_weight="44.0"
+                        android:gravity="center"
+                        android:shadowColor="#ff000000"
+                        android:shadowDx="0.0"
+                        android:shadowDy="-1.0"
+                        android:shadowRadius="1.0"
+                        android:singleLine="true"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/twelveSp" />
+
+                    <View
+                        style="@style/view_vertical"
+                        android:layout_weight="53.0" />
+
+                    <ImageView
+                        android:id="@+id/dimensional_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="360.0"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/dimensional_code"
+                        android:visibility="visible" />
+
+                    <View
+                        style="@style/view_vertical"
+                        android:layout_weight="53.0" />
+
+                    <Button
+                        android:id="@+id/checkUpdate_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.0dip"
+                        android:layout_weight="79.0"
+                        android:background="@drawable/delete_selector"
+                        android:onClick="checkUpdate"
+                        android:text="@string/checkUpdate"
+                        android:textColor="@drawable/color_selector2"
+                        android:textSize="@dimen/eighteenSp" />
+
+                    <View
+                        style="@style/view_vertical"
+                        android:layout_weight="79.0" />
+
+                    <View
+                        android:id="@+id/view"
+                        style="@style/view_vertical"
+                        android:layout_weight="360.0"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/view_horizontal"
+                android:layout_weight="31.0" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_vertical"
+            android:layout_weight="100.0" />
+    </LinearLayout>
+
+</RelativeLayout>

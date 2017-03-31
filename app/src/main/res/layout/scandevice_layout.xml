@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:background="@color/color_my_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip" >
+
+            <CheckBox
+                android:id="@+id/show_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/big_check_box"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_new"
+                android:textColor="@color/color_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip" >
+
+            <CheckBox
+                android:id="@+id/show_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/big_check_box"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_all"
+                android:textColor="@color/color_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="78"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_list_bg"
+            android:fillViewport="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/no_device_found"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/no_device_found"
+                android:textColor="@color/color_gray"
+                android:textSize="18.0sp" />
+
+            <com.vincent.sourvide.view.MyListView
+                android:id="@+id/scaning_device_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/color_my_transparent"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1px"
+                android:drawSelectorOnTop="false"
+                android:footerDividersEnabled="true"
+                android:listSelector="@color/color_my_transparent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:background="@color/color_my_white"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawablePadding="10.0dip"
+            android:drawableRight="@drawable/enter"
+            android:gravity="center_vertical"
+            android:text="@string/add_to_list"
+            android:textColor="@color/color_gray"
+            android:textSize="21.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

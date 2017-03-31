@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    android:orientation="horizontal" 
+    android:id="@+id/timer_main_layout" 
+    android:layout_width="fill_parent" 
+    android:layout_height="58dip"
+    android:weightSum="100.0"
+    android:background="@drawable/list_item_bg_gray"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="0dip" 
+        android:layout_weight="78.0"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip">
+        
+	        <TextView 
+	            android:textColor="@color/scene_dark_gray" 
+	            android:id="@+id/opentext" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="fill_parent" 
+	            android:gravity="top"
+	            android:text="@string/timerlist_open_text" />
+	        <TextView 
+	            android:textSize="@dimen/timer_time_text_size" 
+	            android:textColor="@color/timerlist_time" 
+	            android:id="@+id/open_time" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:text="@string/timer_default_time"
+	            android:layout_marginLeft="@dimen/timer_timelefttext"  />
+	        <ImageView 
+	            android:id="@+id/timer_img" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="@dimen/timer_margin_10" 
+	            android:src="@drawable/timerlist_line" 
+	            android:contentDescription="@string/timer_img" />
+	        <TextView 
+	            android:textSize="@dimen/timer_time_text_size" 
+	            android:textColor="@color/timerlist_time" 
+	            android:id="@+id/close_time" 
+	            android:text="@string/timer_default_time"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="@dimen/timer_margin_10"  />
+	        <TextView 
+	            android:textColor="@color/scene_dark_gray" 
+	            android:id="@+id/closetext" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="fill_parent" 
+	            android:gravity="top"
+	            android:layout_marginLeft="@dimen/timer_timelefttext"
+	            android:text="@string/timerlist_close_text"  />
+        
+        </LinearLayout>
+    
+
+        <TextView 
+        android:textColor="@color/black"  
+        android:id="@+id/repeat_date" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/timer_trigon_margin" 
+        android:layout_marginBottom="2.0dip" 
+        android:singleLine="true" 
+        android:drawableLeft="@drawable/timerlist_clock" 
+        android:drawablePadding="2.0dip" />
+
+        
+    </LinearLayout>
+    
+ 
+    <LinearLayout 
+        android:layout_width="0dip" 
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:layout_weight="22.0">
+        
+	    <com.vincent.sourvide.view.SwitchButton
+	            android:id="@+id/timerlist_en" 
+	            android:layout_width="@dimen/timer_switch_width" 
+	            android:layout_height="@dimen/timer_switch_height"/>
+	</LinearLayout>
+</LinearLayout>

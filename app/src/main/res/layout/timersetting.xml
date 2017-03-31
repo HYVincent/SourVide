@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:id="@+id/timerset_mainbg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:visibility="invisible" 
+        android:layout_width="wrap_content" 
+        android:layout_height="1.0dip" />
+    
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:id="@+id/open_layout" 
+        android:background="@drawable/timer_item_bg_dark" 
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/timer_time_height" 
+        android:weightSum="10.0"
+        android:layout_marginTop="@dimen/timer_margin_top">
+        
+        <LinearLayout
+            android:layout_width="0dip" 
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="8.0"
+        	android:layout_height="fill_parent">
+        	
+	        <TextView 
+	            android:textSize="@dimen/timer_text_text_size" 
+	            android:textColor="@color/black" 
+	            android:id="@+id/opentext" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="@dimen/timer_margin_10" 
+	            android:layout_gravity="center_vertical"
+	            android:text="@string/timerset_open" />
+	        <TextView 
+	            android:textSize="@dimen/timer_time_text_size" 
+	            android:textColor="@color/black" 
+	            android:id="@+id/timerset_open_time" 
+	            android:layout_height="wrap_content" 
+	            android:layout_width="wrap_content" 
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/timer_margin_5" 
+	            android:text="@string/timer_time"  />
+        </LinearLayout>
+        
+        <com.vincent.sourvide.view.SwitchButton
+            android:layout_gravity="center_vertical" 
+            android:layout_weight="2.0"
+            android:id="@+id/open_timer_switch" 
+            android:layout_width="0dip" 
+            android:layout_height="@dimen/timer_switch_height"  />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal" 
+        android:id="@+id/close_layout" 
+        android:weightSum="10.0"
+        android:background="@drawable/timer_item_bg_light" 
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/timer_time_height">
+        
+        <LinearLayout
+            android:layout_width="0dip" 
+            android:orientation="horizontal"
+            android:layout_weight="8.0"
+        	android:layout_height="fill_parent"
+        	android:gravity="center_vertical">
+        	
+	        <TextView android:textSize="@dimen/timer_text_text_size" 
+	            android:textColor="@color/black" 
+	            android:id="@+id/closetext" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/timer_margin_10" 
+	            android:text="@string/timerset_close"  />
+	        <TextView 
+	            android:textSize="@dimen/timer_time_text_size" 
+	            android:textColor="@color/black" 
+	            android:id="@+id/timerset_close_time" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/timer_margin_5" 
+	            android:text="@string/timer_time" />
+        </LinearLayout>
+        
+        <com.vincent.sourvide.view.SwitchButton
+            android:id="@+id/close_timer_switch"
+            android:layout_weight="2.0" 
+            android:layout_width="0dip" 
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/timer_switch_height" 
+		 />
+    </LinearLayout>
+    
+    <LinearLayout 
+		     android:layout_height="wrap_content"
+			 android:layout_width="wrap_content"
+			 android:layout_marginTop="6dp" >	
+			
+		     <LinearLayout
+				android:background="@drawable/picker_bg"
+				android:layout_height="@dimen/picker_bg_height"
+				android:layout_width="@dimen/picker_bg_width"
+				android:orientation="vertical">
+				
+			    <TextView 
+			     android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:gravity="left"
+				 android:paddingLeft="10dp"
+				 android:textColor="@color/color_black"
+				 android:textSize="16sp"
+				 android:text="@string/label_start"/>
+				    
+			    <LinearLayout 
+				    android:layout_height="wrap_content"
+					android:layout_width="fill_parent"
+					android:gravity="center_vertical"
+					android:paddingLeft="14dp"
+					android:orientation="horizontal"
+					>
+					<kankan.wheel.widget.WheelView 
+				     android:id="@+id/hour"
+				     android:background="@color/color_my_transparent"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"/>
+				 
+					<kankan.wheel.widget.WheelView 
+					    android:id="@+id/mins"
+					    android:layout_marginLeft="20dp"
+					    android:background="@color/color_my_transparent"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+			<LinearLayout
+				android:background="@drawable/picker_bg"
+				android:layout_height="@dimen/picker_bg_height"
+				android:layout_width="@dimen/picker_bg_width"
+				android:orientation="vertical">
+				
+			    <TextView 
+			     android:layout_height="wrap_content"
+				 android:layout_width="fill_parent"
+				 android:gravity="right"
+				 android:paddingRight="10dp"
+				 android:textColor="@color/color_black"
+				 android:textSize="16sp"
+				 android:text="@string/label_end"/>
+			    
+				<LinearLayout 
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:layout_height="wrap_content"
+				 	android:layout_width="fill_parent"
+					android:paddingLeft="14dp"
+					>
+					    <kankan.wheel.widget.WheelView 
+					    android:id="@+id/end_hour"
+					    android:background="@color/color_my_transparent"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"/>
+					
+						<kankan.wheel.widget.WheelView 
+					    android:id="@+id/end_mins"
+					    android:layout_marginLeft="20dp"
+					    android:background="@color/color_my_transparent"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>	
+		
+	<LinearLayout 	
+	    android:layout_width="wrap_content" 
+	    android:orientation="horizontal"
+        android:layout_height="wrap_content">
+			
+		    <TextView 
+		        android:textSize="@dimen/timer_text_text_size" 
+		        android:textColor="@color/black" 
+		        android:id="@+id/repeat_date_text" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:layout_marginLeft="@dimen/timer_margin_10" 
+		        android:layout_marginTop="@dimen/timer_open_layoutmargintop" 
+		        android:text="@string/timer_repeat_date_text" 
+		        android:singleLine="true" />
+		    
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent" 
+		        android:textColor="#ffffffff"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginLeft="4dp"
+		        android:id="@+id/timer_set_once"
+		        android:gravity="center"
+		        android:textSize="13.0sp" 
+		        android:background="@drawable/no_limit_normal"
+		        android:text="@string/timer_repeat_date_onetime"/>
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent" 
+		        android:textColor="#ffffffff"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginLeft="4dp"
+		        android:id="@+id/timer_set_everyday"
+		        android:gravity="center"
+		        android:textSize="13.0sp" 
+		        android:background="@drawable/no_limit_normal"
+		        android:text="@string/timer_repeat_date_everyday"/>
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:textColor="#ffffffff"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginLeft="4dp"
+		        android:id="@+id/timer_set_everyweek"
+		        android:gravity="center"
+		        android:textSize="13.0sp" 
+		        android:background="@drawable/no_limit_normal"
+		        android:text="@string/timer_repeat_date_everyweek"/>
+    
+    </LinearLayout>
+    
+	
+    <LinearLayout 
+        android:layout_gravity="center_horizontal" 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent" 
+        android:id="@+id/weekday_buttons"
+        android:weightSum="7.0"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="@dimen/timer_open_layoutmargintop">
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_7" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:minWidth="@dimen/buttonminwidth" 
+            android:minHeight="@dimen/buttonminheight" 
+            android:layout_weight="1.0"
+            android:text="@string/timer_repeat_date_7" />
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_1" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:minWidth="@dimen/buttonminwidth" 
+            android:minHeight="@dimen/buttonminheight" 
+            android:layout_weight="1.0"
+            android:text="@string/timer_repeat_date_1" />
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_2" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0"
+            android:minWidth="@dimen/buttonminwidth" 
+            android:minHeight="@dimen/buttonminheight" 
+            android:text="@string/timer_repeat_date_2" />
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_3" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:minWidth="@dimen/buttonminwidth" 
+            android:layout_weight="1.0"
+            android:minHeight="@dimen/buttonminheight" 
+            android:text="@string/timer_repeat_date_3" />
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_4" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="1.0"
+            android:minWidth="@dimen/buttonminwidth" 
+            android:minHeight="@dimen/buttonminheight" 
+            android:text="@string/timer_repeat_date_4" />
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_5" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_weight="1.0"
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:minWidth="@dimen/buttonminwidth" 
+            android:minHeight="@dimen/buttonminheight" 
+            android:text="@string/timer_repeat_date_5" />
+        <Button android:textSize="@dimen/timer_repart_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timer_repeat_date_6" 
+            android:background="@drawable/timer_repart_bg" 
+            android:layout_weight="1.0"
+            android:layout_width="0dip" 
+            android:layout_height="wrap_content" 
+            android:minWidth="@dimen/buttonminwidth" 
+            android:minHeight="@dimen/buttonminheight" 
+            android:text="@string/timer_repeat_date_6" />
+    </LinearLayout>
+    
+    
+		
+    
+    <RelativeLayout 
+        android:layout_gravity="center_horizontal" 
+        android:orientation="horizontal" 
+        android:id="@+id/timepicker_main" 
+        android:background="@drawable/timer_item_bg_dark" 
+        android:visibility="gone" 
+        android:layout_width="fill_parent" 
+        android:layout_height="@dimen/timer_pickdata_text_height" 
+        android:layout_marginTop="@dimen/timer_open_layoutmargintop" >
+        <TextView android:textSize="@dimen/timer_text_text_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timerset_set_cancel" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="@dimen/timer_margin_10" 
+            android:text="@string/timerset_set_cancel" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/timer_text_text_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timerset_set_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/timerset_set_title" 
+            android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/timer_text_text_size" 
+            android:textColor="@color/black" 
+            android:id="@+id/timerset_set_ok" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="@dimen/timer_margin_20" 
+            android:text="@string/timerset_set_ok" 
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <TimePicker 
+        android:id="@+id/tpPicker" 
+        android:visibility="gone" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+    
+</LinearLayout>

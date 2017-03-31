@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scene_control_title_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    <TextView
+        android:id="@+id/error_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="4dip"
+        android:paddingTop="12dip"
+        android:text="@string/text_kettle_no_0"
+        android:textColor="@color/color_red"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/device_titleinfo_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="12dip"
+        android:visibility="gone"
+        android:weightSum="2.0" >
+
+        <TextView
+            android:id="@+id/state_info_temp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/add_device"
+            android:textColor="@color/black"
+            android:textSize="@dimen/timer_info_show_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/state_info"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/add_device"
+            android:textColor="@color/black"
+            android:textSize="@dimen/timer_info_show_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="12dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/temp_text"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/timer_info_show_text_size" />
+
+            <TextView
+                android:id="@+id/text_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:text="@string/text_kettle_no_2"
+                android:textColor="@color/temprature_color"
+                android:textSize="@dimen/temprature_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_kettle_c"
+                android:textColor="@color/temprature_color"
+                android:textSize="@dimen/timer_info_show_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fix_temp_text"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteenSp" />
+
+            <TextView
+                android:id="@+id/fix_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:gravity="center"
+                android:text="@string/text_kettle_no_2"
+                android:textColor="@color/temprature_color"
+                android:textSize="@dimen/eighteenSp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_kettle_c"
+                android:textColor="@color/temprature_color"
+                android:textSize="@dimen/eighteenSp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/device_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/device_center_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/timer_margin_s20"
+        android:background="@drawable/device_state_off_selector"
+        android:contentDescription="@string/timer_img" />
+
+    <TextView
+        android:id="@+id/device_center_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/seek_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/led_color_value_mixer"
+                android:gravity="center"
+                android:text="@string/text_kettle_zero"
+                android:textColor="@android:color/black" />
+
+            <SeekBar
+                android:id="@+id/seek_fix_temp"
+                android:layout_width="255dip"
+                android:layout_height="wrap_content"
+                android:maxHeight="3.0dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:progressDrawable="@drawable/seek_img_effect_ch12"
+                android:thumb="@drawable/thumb" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/smart_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/device_gride_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/device_first_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/warm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/device_drawablepadding"
+                    android:drawableTop="@drawable/selector_mode_warm"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_kettle_keep"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/boil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/device_drawablepadding"
+                    android:drawableTop="@drawable/selector_mode_boil"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_kettle_cook"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/purify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/device_drawablepadding"
+                    android:drawableTop="@drawable/selector_mode_purify"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_kettle_kill"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:id="@+id/pump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/device_drawablepadding"
+                    android:drawableTop="@drawable/selector_mode_add"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_kettle_water"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/boil_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/device_drawablepadding"
+                    android:drawableTop="@drawable/selector_mode_warm"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_kettle_auto_boil"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/purify_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawablePadding="@dimen/device_drawablepadding"
+                    android:drawableTop="@drawable/selector_mode_purify"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_kettle_auto_kill"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

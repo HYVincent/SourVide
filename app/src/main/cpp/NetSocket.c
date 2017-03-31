@@ -11,6 +11,7 @@ uint32 g_printf_debug_on=1;
 int g_inited = 0;
 AppInfo_t g_AppInfo;
 
+
 uint8 rcv_buff[SOCKET_RCV_BUFF_LEN];
 
 uint32 UserInit(uint32 sn, uint32 grp_id, uint32 mode)

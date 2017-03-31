@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_0">0dp</dimen>
+    <dimen name="size_05">0.5px</dimen>
+    <dimen name="size_1">1dp</dimen>
+    <dimen name="size_1px">1px</dimen>
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_3">3dp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_5">5dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_10sp">10sp</dimen>
+    <dimen name="size_12sp">12sp</dimen>
+    <dimen name="size_15">15dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_16sp">16sp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_18sp">18sp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_25">25dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_33">33dp</dimen>
+    <dimen name="size_35">35dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_49">49dp</dimen>
+    <dimen name="size_50">50dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_70">70dp</dimen>
+    <dimen name="dize_80">80dp</dimen>
+    <dimen name="size_100">100dp</dimen>
+    <dimen name="size_140">140dp</dimen>
+    <dimen name="size_150">150dp</dimen>
+    <dimen name="size_200">200dp</dimen>
+    <dimen name="size_240">140dp</dimen>
+    <dimen name="size_300">300dp</dimen>
+    
+    
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="control_icons_width">45dp</dimen>
+    <dimen name="control_icons_high">36dp</dimen>
+    <dimen name="control_icons_padding_horizontal">51dp</dimen>
+    <dimen name="control_icons_padding_vertical">11dp</dimen>
+    <dimen name="picker_bg_width">160dp</dimen>
+    <dimen name="picker_bg_height">195dp</dimen>
+    <dimen name="confrim_btn_width">75dp</dimen>
+    <dimen name="confrim_btn_height">44dp</dimen>
+    <dimen name="center_state_icon_width">190dp</dimen>
+    <dimen name="center_state_icon_height">259dp</dimen>
+    <!--
+    <dimen name="center_state_bg_width">150dp</dimen>
+    <dimen name="center_state_bg_height">280dp</dimen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+    <dimen name="center_speed_bg_width">55dp</dimen>
+    <dimen name="center_speed_bg_height">88dp</dimen>
+    <dimen name="center_speed_button_width">49dp</dimen>
+    <dimen name="center_speed_button_height">49dp</dimen>
+    <dimen name="center_circle_bg_width">49dp</dimen>
+    <dimen name="center_circle_bg_height">49dp</dimen>
+    <dimen name="tenSp">10.0sp</dimen>
+    <dimen name="elevenSp">11.0sp</dimen>
+    <dimen name="twelveSp">12.0sp</dimen>
+    <dimen name="thirteenSp">13.0sp</dimen>
+    <dimen name="fourteenSp">14.0sp</dimen>
+    <dimen name="sixteenSp">16.0sp</dimen>
+    <dimen name="eighteenSp">18.0sp</dimen>
+    <dimen name="twentySp">20.0sp</dimen>
+    <dimen name="twentyTwoSp">22.0sp</dimen>
+    <dimen name="twentyFourSp">24.0sp</dimen>
+    <dimen name="twentyEightSp">28.0sp</dimen>
+    <dimen name="checkPointW">9.0dip</dimen>
+    <dimen name="checkPointH">9.0dip</dimen>
+    <dimen name="timer_info_show_text_size">20.0sp</dimen>
+    <dimen name="temprature_size">54.0sp</dimen>
+    <dimen name="scene_control_menu_width">80.0dip</dimen>
+    <dimen name="device_titleinfo_margin_left">8.0dip</dimen>
+    <dimen name="device_titleinfo_margin_top">60.0dip</dimen>
+    <dimen name="device_drawablepadding">4.0dip</dimen>
+    <dimen name="scene_control_menu_size">50.0dip</dimen>
+    <dimen name="device_first_margin_top">16.0dip</dimen>
+    <dimen name="device_second_margin_top">10.0dip</dimen>
+    <dimen name="timer_margin_s10">-10.0dip</dimen>
+    <dimen name="timer_margin_s40">-40.0dip</dimen>
+    <dimen name="timer_margin_5">8.0dip</dimen>
+    <dimen name="timer_margin_10">10.0dip</dimen>
+    <dimen name="timer_margin_s20">-20.0dip</dimen>
+    <dimen name="dimen_size_s10">10.0dip</dimen>
+    <dimen name="timer_text_text_size">16.0sp</dimen>
+    <dimen name="timer_time_text_size">30.0sp</dimen>
+    <dimen name="timer_title_clock">4.0dip</dimen>
+    <dimen name="timerlist_item_height">76.0dip</dimen>
+    <dimen name="timer_margintop_text">8.0dip</dimen>
+    <dimen name="timer_timelefttext">5.0dip</dimen>
+    <dimen name="timer_switch_width">74.0dip</dimen>
+    <dimen name="timer_switch_height">29.0dip</dimen>
+    <dimen name="timer_margin_30">4.0dip</dimen>
+    <dimen name="timer_trigon_margin">4.0dip</dimen>
+    <dimen name="timer_repart_size">14.0sp</dimen>
+    <dimen name="buttonminwidth">1.0dip</dimen>
+    <dimen name="timer_open_layoutmargintop">10.0dip</dimen>
+    <dimen name="timer_pickdata_text_height">40.0dip</dimen>
+    <dimen name="timer_margin_top">2.0dip</dimen>
+    <dimen name="buttonminheight">1.0dip</dimen>
+    <dimen name="timer_time_height">65.0dip</dimen>
+    <dimen name="timer_margin_20">20.0dip</dimen>
+    <dimen name="delay_add_titleclock_margintop">4.0dip</dimen>
+    <dimen name="delay_add_titleclock_marginbuttom">10.0dip</dimen>
+    <dimen name="delay_add_layoutwidth">200.0dip</dimen>
+    <dimen name="delay_add_layout_margintop">10.0dip</dimen>
+    <dimen name="delay_list_line_margintop">15.0dip</dimen>
+    <dimen name="delay_add_textsize">68.0sp</dimen>
+    <dimen name="delay_set_layout_margintop">15.0dip</dimen>
+    <dimen name="delay_set_marginleft">20.0dip</dimen>
+    <dimen name="delay_set_day_marginleft">53.0dip</dimen>
+    <dimen name="delay_set_hour_marginleft">45.0dip</dimen>
+    <dimen name="delay_set_min_marginleft">25.0dip</dimen>
+    <dimen name="delay_set_margintop">80.0dip</dimen>
+
+</resources>
