@@ -22,7 +22,6 @@
             android:configChanges="keyboardHidden|navigation|orientation"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         
         <activity
@@ -30,71 +29,60 @@
             android:configChanges="keyboardHidden|navigation|orientation"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
             android:name="com.vincent.sourvide.activity.LoginActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.ConfigDeviceActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.NetworkTestActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.OptionActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
             android:name="com.vincent.sourvide.activity.ScanDeviceActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.FAQActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.UserGuideActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.AboutActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.EditDeviceInfoActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="com.vincent.sourvide.activity.DeviceDetailActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
 
     </application>
